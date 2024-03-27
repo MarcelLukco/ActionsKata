@@ -61,6 +61,8 @@ jobs:
     needs:
       - test
       - sonarcloud
+      - build
+      - welcome
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
